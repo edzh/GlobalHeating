@@ -1,0 +1,196 @@
+body {
+    /*Default font and color*/
+    font-family: 'alexandriaflfregular','Open Sans', sans-serif;
+    color: #2a2727;
+
+    /*Background Image*/
+    background-color: white;
+}
+.container {
+/*    max-width: 980px;*/
+}
+.tab-content ul li {
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    max-width: 900px;
+    margin-top: 32px;
+    font-size: 30px;
+    font-family: 'alexandriaflfbold';
+    line-height: 36px;
+}
+.tab-content p {
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    max-width: 900px;
+    margin-top: 32px;
+    font-size: 30px;
+    font-family: 'alexandriaflfbold';
+    line-height: 36px;
+}
+.tab-content h3 {
+    font-family: 'alexandriaflfbold';
+    font-size: 90px;
+    text-align: center;
+    padding: 32px 0px 128px 0px;
+    line-height: 69px;
+    color: #2a2727;
+}
+
+a {
+    text-decoration: none;
+    color: #2a2727;
+}
+a:hover {
+    text-decoration: none;
+    color: #2a2727;
+}
+.container h1 {
+    font-family: 'alexandriaflfbold', 'Open Sans';
+	font-size: 130px;
+	text-align: center;
+	color: #2a2727;
+}
+.tab-content {
+    max-width: 1170px;
+}
+.tab-content h2 {
+    font-family: 'alexandriaflfregular';
+    font-size: 45px;
+    text-align: left;
+    max-width: 940px;
+    line-height: 54px;
+}
+.tab-content h2 span {
+    font-family: 'alexandriaflfbold';
+    font-size: 45px;
+    padding: 5px;
+    color: #33cccc;
+}
+.header p {
+	text-align: center;
+	font-weight: 400;
+}
+
+/***NAVBAR***/
+.navbar {
+    border-radius: 0px;
+    border-bottom: 2px solid #2a2727;
+    max-width: 1170px;
+    margin: auto;
+    background-color: white;
+}
+.navbar .container {
+    padding-right: 0px;
+}
+.navbar .navbar-collapse {
+    padding-right: 0px;
+}
+.navbar .nav > li > a {
+    font-size: 12px;
+    font-family: 'alexandriaflfbold';
+    color: #2a2727;
+    text-shadow: none;
+}
+.navbar .nav > li > a > img {
+    padding-right: 10px;
+    margin-bottom: -25px;
+    margin-top: -30px;
+}
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    color: #33cccc;
+    background-color: rgba(0,0,0,0);
+}
+.navbar .nav > li > a:hover {
+    color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0);
+}
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    color: #33cccc;
+    background-color: rgba(0,0,0,0);
+}
+.pull-right {
+    float: right;
+}
+.navbar-brand {
+    color: #33cccc;
+    font-family: 'alexandriaflfbold';
+    font-size: 30px;
+    padding-left: 0px;
+}
+.divider {
+    max-width: 940px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background-color: rgba(0,0,0,0.15);
+    margin-top: 20px;
+}
+.navbar-toggle {
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+.navbar-toggle .icon-bar {
+    background-color: #2a2727;
+}
+.navbar-toggle:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.navbar-toggle:focus {
+    background-color: rgba(0,0,0,0);
+}
+.navbar-collapse {
+    border: none;
+    overflow: hidden;
+}
+
+
+/***TAB CONTENT***/
+#tabcontent {
+    padding: 0px 0px 0px 0px;
+}
+#home img {
+    width: 40%;   
+}
+#home .text-container {
+    float: right;
+    width: 45%;
+}
+.test {
+    padding-top: 180px;
+    text-align: center;
+}
+.icon-double-angle-down {
+    font-size: 300px;
+    color: #33cccc;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar .container {
+        padding-right: 15px;
+    }
+    .navbar .navbar-collapse {
+        padding-right: 15px;
+    }
+    #home .text-container {
+        width: 100%;
+    }
+    #home img {
+        display: none;
+    }
+}
+
+.tab-content p {
+    font-size: 50px
+}
+
+.writing {
+    padding-top: 50px;
+}
+
+.writing p {
+    line-height: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
