@@ -1,13 +1,14 @@
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
 body {
     /*Default font and color*/
     font-family: 'alexandriaflfregular','Open Sans', sans-serif;
-    color: #2a2727;
+    color: #3e3939;
 
     /*Background Image*/
     background-color: white;
-}
-.container {
-/*    max-width: 980px;*/
 }
 .tab-content ul li {
     margin-left: auto;
@@ -35,22 +36,22 @@ body {
     text-align: center;
     padding: 32px 0px 128px 0px;
     line-height: 69px;
-    color: #2a2727;
+    color: #3e3939;
 }
 
 a {
     text-decoration: none;
-    color: #2a2727;
+    color: #3e3939;
 }
 a:hover {
     text-decoration: none;
-    color: #2a2727;
+    color: #3e3939;
 }
 .container h1 {
     font-family: 'alexandriaflfbold', 'Open Sans';
 	font-size: 130px;
 	text-align: center;
-	color: #2a2727;
+	color: #3e3939;
 }
 .tab-content {
     max-width: 1170px;
@@ -76,10 +77,13 @@ a:hover {
 /***NAVBAR***/
 .navbar {
     border-radius: 0px;
-    border-bottom: 2px solid #2a2727;
+    border-bottom: 2px solid #3e3939;
     max-width: 1170px;
     margin: auto;
     background-color: white;
+}
+.navbar .nav {
+    margin-right: -14px;
 }
 .navbar .container {
     padding-right: 0px;
@@ -90,20 +94,28 @@ a:hover {
 .navbar .nav > li > a {
     font-size: 12px;
     font-family: 'alexandriaflfbold';
-    color: #2a2727;
+    color: #3e3939;
     text-shadow: none;
+    margin-bottom: -18px;
+    padding-top: 28px;
+    padding-right: 16px;
+    padding-left: 17px;
 }
 .navbar .nav > li > a > img {
     padding-right: 10px;
     margin-bottom: -25px;
     margin-top: -30px;
 }
+.navbar-brand {
+    padding-top: 18px;
+    margin-bottom: -8px
+}
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
     color: #33cccc;
     background-color: rgba(0,0,0,0);
 }
 .navbar .nav > li > a:hover {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.6);
     background-color: rgba(0,0,0,0);
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
@@ -132,7 +144,7 @@ a:hover {
     background-color: rgba(0,0,0,0);
 }
 .navbar-toggle .icon-bar {
-    background-color: #2a2727;
+    background-color: #3e3939;
 }
 .navbar-toggle:hover {
     background-color: rgba(0,0,0,0.2);
@@ -151,19 +163,20 @@ a:hover {
     padding: 0px 0px 0px 0px;
 }
 #home img {
+    margin-top: -30px;
     width: 40%;   
 }
 #home .text-container {
     float: right;
     width: 45%;
 }
-.test {
-    padding-top: 180px;
+.arrow {
+    padding-top: 80px;
     text-align: center;
 }
 .icon-double-angle-down {
-    font-size: 300px;
-    color: #33cccc;
+    color: #3e3939;
+    font-size: 200px;
 }
 
 @media screen and (max-width: 767px) {
@@ -186,7 +199,7 @@ a:hover {
 }
 
 .writing {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .writing p {

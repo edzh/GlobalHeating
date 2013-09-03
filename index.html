@@ -12,7 +12,7 @@
 
 
 </head>
-<body>
+<body data-spy="scroll" data-offset"0" data-target="#nav-tabs" >
 	<nav class="navbar navbar-fixed-top" role="navigation">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
@@ -38,11 +38,11 @@
 	</nav>
 
 	<div class="container" id="tabcontent">
-	<div data-spy="scroll" data-offset="0" data-target="#nav-tabs" class="tab-content">
+	<div class="tab-content">
 		<div class="active writing" id="home">
-			<img src="images/drawing.png" />
+			<img src="images/latest iceberg.jpg" />
 			<h2 class="text-container">What if there were a <span>clearer</span>, more <span>profound</span> way to <span>think</span> about <span>climate change?</span></h2>
-			<p class="test"><a href="#info" id="read-on"><i class="icon-double-angle-down"></i></a></p>
+			<p class="arrow"><a href="#info" id="read-on"><i class="icon-double-angle-down"></i></a></p>
 		</div>
 		<div class="writing" id="info">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus maiores natus excepturi expedita autem vel in magnam eos ducimus reiciendis! Perferendis, aliquam, aliquid, at debitis odit neque quas obcaecati tempora error quaerat earum sit minima! Sit, necessitatibus, ab et suscipit facilis doloremque asperiores dolore voluptatum tenetur libero atque culpa exercitationem.</p>
@@ -61,21 +61,13 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script>
 		$('body').scrollspy({ target: '#nav-tabs' })
-		// $(function() {
-		// 	$('#read-on').click(function (e) {
-		// 		e.preventDefault();
-		// 		$('#nav-tabs a[href="#info"]')
-		// 			.tab('show')
-		// 			.addClass('active');
-		// 	});
-		// });
 		$("#nav-tabs ul li a[href^='#']").on('click', function(e) {
    			e.preventDefault();
-  			$('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+  			$('html, body').animate({ scrollTop: $(this.hash).offset().top +3}, 500);
   		});
-  		$(".test a[href^='#']").on('click', function(e) {
+  		$(".arrow a[href^='#']").on('click', function(e) {
    			e.preventDefault();
-  			$('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+  			$('html, body').animate({ scrollTop: $(this.hash).offset().top +3}, 500);
   		});
 	</script>
 </body>
