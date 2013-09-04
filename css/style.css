@@ -10,6 +10,9 @@ body {
     /*Background Image*/
     background-color: white;
 }
+.container {
+    max-width: 1012px;
+}
 .tab-content ul li {
     margin-left: auto;
     margin-right: auto;
@@ -54,7 +57,7 @@ a:hover {
 	color: #3e3939;
 }
 .tab-content {
-    max-width: 1170px;
+    max-width: 1012px;
 }
 .tab-content h2 {
     font-family: 'alexandriaflfregular';
@@ -78,7 +81,7 @@ a:hover {
 .navbar {
     border-radius: 0px;
     border-bottom: 2px solid #3e3939;
-    max-width: 1170px;
+    max-width: 1014px;
     margin: auto;
     background-color: white;
 }
@@ -136,8 +139,7 @@ a:hover {
     height: 2px;
     display: block;
     margin: auto;
-    background-color: rgba(0,0,0,0.15);
-    margin-top: 20px;
+    background-color: white;
 }
 .navbar-toggle {
     border: none;
@@ -159,16 +161,18 @@ a:hover {
 
 
 /***TAB CONTENT***/
+.writing {
+    padding-top: 50px;
+}
+.writing p {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
 #tabcontent {
     padding: 0px 0px 0px 0px;
 }
-#home img {
-    margin-top: -30px;
-    width: 40%;   
-}
-#home .text-container {
-    float: right;
-    width: 45%;
+.tab-content p {
+    font-size: 50px
 }
 .arrow {
     padding-top: 80px;
@@ -177,8 +181,8 @@ a:hover {
 .icon-double-angle-down {
     color: #3e3939;
     font-size: 200px;
+    display: block;
 }
-
 @media screen and (max-width: 767px) {
     .navbar .container {
         padding-right: 15px;
@@ -187,23 +191,149 @@ a:hover {
         padding-right: 15px;
     }
     #home .text-container {
-        width: 100%;
+        width: 100% !important;
     }
     #home img {
         display: none;
     }
+    #home .icon-double-angle-down {
+        display: none;
+    }
 }
 
-.tab-content p {
-    font-size: 50px
-}
-
-.writing {
+/***HOME CONTENT***/
+.home-content {
     padding-top: 100px;
 }
+#home img {
+    margin-top: -30px;
+    width: 40%;   
+}
+#home .text-container {
+    float: right;
+    width: 55%;
+    margin-right: -40px;
+}
 
-.writing p {
-    line-height: 50px;
-    margin-top: 100px;
-    margin-bottom: 200px;
+/***HOME SLIDE-ONE***/
+.container #home-slide1 {
+    position: relative;
+    width: 1012px;
+}
+#home-slide1 .red-box {
+    background-color: #fb7070;
+    height: 105px;
+    width: 446px;
+    position: relative;
+    z-index: 1;
+}
+#home-slide1 .red-box p {
+    color: white;
+    font-size: 25px;
+    padding: 10px 0px 0px 23px;
+}
+#home-slide1 .red-box p span {
+    font-size: 35px;
+}
+#home-slide1 .icepot img {
+    position: absolute;
+    top: 197px;
+    left: 16px;
+}
+#home-slide1 .red-boxTwo {
+    background-color: #fb7070;
+    height: 103px;
+    width: 345px; 
+    position: relative;
+    left: 625px;
+    bottom: 205px;
+}
+#home-slide1 .red-boxTwo p {
+    color: white;
+    font-size: 25px;
+    padding: 15px 0px 0px 17px;
+}
+#home-slide1 .red-boxTwo p .med {
+    font-size: 30px;
+}
+#home-slide1 .red-boxTwo p .large {
+    font-size: 40px;
+}
+#home-slide1 .red-boxThree {
+    position: relative;
+    left: 625px;
+    bottom: 213px;
+    background-color: #fb7070;
+    width: 370px;
+    height: 103px;
+}
+#home-slide1 .red-boxThree p {
+    color: white;
+    font-size: 29px;
+    padding: 18px 0px 0px 18px;
+}
+#home-slide1 .blue-box {
+    position: absolute;
+    top: 465px;
+    left: 13px;
+    background-color: #33cccc;
+    width: 154px;
+    height: 136px;
+}
+#home-slide1 .blue-box .title {
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    padding: 5px 0px 0px 12px;
+}
+#home-slide1 .blue-box .body {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    margin: 0;
+    padding: 7px 0px 0px 12px;
+}
+#home-slide1 .note p {
+    position: relative;
+    bottom: 97px;
+    left: 175px;
+    font-size: 38px;
+    text-align: center;
+    margin: 0;
+}
+#home-slide1 .note p .red {
+    color: #fb7070;
+}
+#home-slide1 .note p .blue {
+    font-family: 'alexandriaflf-bolditalic';
+    font-size: 53px;
+    color: #33cccc;
+}
+#home-slide1 .note .sidenote {
+    padding: 7px 34px 0px 0px;
+    font-size: 30px
+}
+#home-slide1 .note .sidenote span {
+    font-size: 18px
+}
+#home-slide1 .red-connect0 {
+    position: absolute;
+    left: 460px;
+    top: 170px;
+    z-index: 2;
+}
+#home-slide1 .red-connect1 {
+    position: absolute;
+    right: 289px;
+    top: 253px;
+}
+#home-slide1 .red-arrow {
+    position: absolute;
+    right: 259px;
+    top: 448px;
+}
+#home-slide1 .icon-double-angle-down {
+    position: relative;
+    left: 55px;
+    bottom: 230px;
 }

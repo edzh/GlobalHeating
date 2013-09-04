@@ -39,19 +39,41 @@
 
 	<div class="container" id="tabcontent">
 	<div class="tab-content">
-		<div class="active writing" id="home">
+		<div class="active writing home-content" id="home">
 			<img src="images/latest iceberg.jpg" />
 			<h2 class="text-container">What if there were a <span>clearer</span>, more <span>profound</span> way to <span>think</span> about <span>climate change?</span></h2>
-			<p class="arrow"><a href="#info" id="read-on"><i class="icon-double-angle-down"></i></a></p>
+			<p class="arrow"><a href="#home-slide1" id="read-on"><i class="arrow icon-double-angle-down"></i></a></p>
 		</div>
-		<div class="writing" id="info">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus maiores natus excepturi expedita autem vel in magnam eos ducimus reiciendis! Perferendis, aliquam, aliquid, at debitis odit neque quas obcaecati tempora error quaerat earum sit minima! Sit, necessitatibus, ab et suscipit facilis doloremque asperiores dolore voluptatum tenetur libero atque culpa exercitationem.</p>
+		<div class="container writing" id="home-slide1">
+			<div class="red-box">
+				<p>Imagine you've filled a <span>pot</span> with <span>water</span> and <span>ice</span>. <span>(</span>Lots of ice.<span>)</span></p>
+			</div>
+			<img class="red-connect0" src="images/slide1 connecter0.png" />
+			<div class="red-boxTwo">
+				<p>You put your hand inside. <span class="med">How <span class="large">cold</span> is it?</span></p>
+			</div>
+			<img class="red-connect1" src="images/slide1 connecter1.png" />
+			<div class="red-boxThree">
+				<p>You grab your handy thermometer to find out.</p>
+			</div>
+			<img class="red-arrow" src="images/slide1 arrow.png" />
+			<div class="icepot"><img src="images/icepot.jpg"/></div>
+			<div class="blue-box">
+				<p class="title">nerd tidbit</p>
+				<div class="divider"></div>
+				<p class="body">0° Celsius is the equilibrium at which water and ice coexist.</p>
+			</div>
+			<div class="note">
+				<p>The <span class="red">temperature</span> will read <span class="blue">0° Celsius</span><p>
+				<p class="sidenote">(<span>Or 32° Farenheit if you're an old fart.</span>)</p>
+			</div>
+			<p class="arrow"><i class="icon-double-angle-down"></i></p>
 		</div>
 		<div class="writing" id="data">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ut, voluptatum, porro cupiditate quis enim quae voluptate impedit ipsa accusantium iusto mollitia nesciunt magnam. Dolor, corporis, reiciendis, repudiandae voluptatem pariatur provident et fugiat inventore distinctio odio explicabo consectetur vitae quas officiis reprehenderit commodi saepe deserunt aperiam dignissimos nisi aliquam ipsa?</p>
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ut, voluptatum, porro cupiditate quis enim quae voluptate impedit ipsa accusantium iusto mollitia nesciunt magnam. Dolor, corporis, reiciendis, repudiandae voluptatem pariatur provident et fugiat inventore distinctio odio explicabo consectetur vitae quas officiis reprehenderit commodi saepe deserunt aperiam dignissimos nisi aliquam ipsa?</p> -->
 		</div>
 		<div class="writing" id="solution">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, cum, mollitia numquam pariatur culpa reiciendis asperiores modi quia facere neque tempora dignissimos quae dolor amet esse officia dolorum similique fugit totam ullam aliquam quod velit ut ipsum quis delectus consequuntur iure odio eveniet sapiente sed excepturi ex nihil voluptatem repellat.</p>
+			<!-- <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, cum, mollitia numquam pariatur culpa reiciendis asperiores modi quia facere neque tempora dignissimos quae dolor amet esse officia dolorum similique fugit totam ullam aliquam quod velit ut ipsum quis delectus consequuntur iure odio eveniet sapiente sed excepturi ex nihil voluptatem repellat.</p></div> -->
 		</div>
 	</div>
 	</div>
@@ -63,11 +85,11 @@
 		$('body').scrollspy({ target: '#nav-tabs' })
 		$("#nav-tabs ul li a[href^='#']").on('click', function(e) {
    			e.preventDefault();
-  			$('html, body').animate({ scrollTop: $(this.hash).offset().top +3}, 500);
+  			$('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
   		});
   		$(".arrow a[href^='#']").on('click', function(e) {
    			e.preventDefault();
-  			$('html, body').animate({ scrollTop: $(this.hash).offset().top +3}, 500);
+  			$('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
   		});
 	</script>
 </body>
