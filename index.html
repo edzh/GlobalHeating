@@ -42,9 +42,10 @@
 		<div class="active writing home-content" id="home">
 			<img src="images/latest iceberg.jpg" />
 			<h2 class="text-container">What if there were a <span>clearer</span>, more <span>profound</span> way to <span>think</span> about <span>climate change?</span></h2>
-			<p class="arrow"><a href="#home-slide1" id="read-on"><i class="arrow icon-double-angle-down"></i></a></p>
+			<div class="arrow"><a href="#home-slide1" id="read-on"><i class="arrow icon-double-angle-down"></i></a></div>
 		</div>
 		<div class="container writing" id="home-slide1">
+			<!-- <div class="overlay"><img src="images/gh6 slide 1.jpg"></div> -->
 			<div class="red-box">
 				<p>Imagine you've filled a <span>pot</span> with <span>water</span> and <span>ice</span>. <span>(</span>Lots of ice.<span>)</span></p>
 			</div>
@@ -67,7 +68,32 @@
 				<p>The <span class="red">temperature</span> will read <span class="blue">0° Celsius</span><p>
 				<p class="sidenote">(<span>Or 32° Farenheit if you're an old fart.</span>)</p>
 			</div>
-			<p class="arrow"><i class="icon-double-angle-down"></i></p>
+			<div class="arrow"><a href="#home-slide2" id="read-on"><i class="icon-double-angle-down"></i></a></div>
+		</div>
+		<div class="container writing" id="home-slide2">
+			<div class="overlay"><img src="images/gh6 slide 2.jpg" /></div>
+			<div class="red-box"><p>Let's warm up our pot. You place it on the stove and turn on the flame.</p></div>
+			<div class="red-connect0"><img src="images/slide2 connecter0.png" /></div>
+			<div class="red-boxTwo">
+				<p class="title">What happens?</p> 
+				<p class="body">The temperature begins to rise, right?</p>
+			</div>
+			<div class="red-arrow"><img src="images/slide2 arrow.png" /></div>
+			<div class="icepot-fire"><img src="images/icepotfire.jpg" /></div>
+			<div class="note">
+				<p class="body">Be sure to keep the pot well stirred.</p>
+				<p class="parenth" id="parenth-one">(</p>
+				<p class="parenth" id="parenth-two">)</p>
+			</div>
+			<div class="wrong"><p>Wrong.</p></div>
+			<div class="text-one"><p>The <span class="red">thermometer</span> will <span class="italic">still read</span> <span class="blue">0° Celsius</span></p></div>
+			<div class="red-boxThree"><p>What's going on?</p></div>
+			<div class="black-connect0"><img src="images/slide2 connecter1.png" /></div>
+			<div class="blue-box"><p>The water temperature isn't rising, but the ice is melting.</p></div>
+			<div class="black-connect1"><img src="images/slide2 connecter2.png" /></div>
+			<div class="red-boxFour"><p>The ice and water are being <span>heated</span>, but they aren't being <span>warmed</span>.</p></div>
+			<div class="text-two"><p>In fact, the temperature will <span class="italic">remain</span> at 0° Celsius until <span class="bold">all the ice has melted</span>.</p></div>
+			<div class="red-boxFive"><p>It's not intuitive, but it's true.</p></div>
 		</div>
 		<div class="writing" id="data">
 			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ut, voluptatum, porro cupiditate quis enim quae voluptate impedit ipsa accusantium iusto mollitia nesciunt magnam. Dolor, corporis, reiciendis, repudiandae voluptatem pariatur provident et fugiat inventore distinctio odio explicabo consectetur vitae quas officiis reprehenderit commodi saepe deserunt aperiam dignissimos nisi aliquam ipsa?</p> -->
@@ -89,7 +115,7 @@
   		});
   		$(".arrow a[href^='#']").on('click', function(e) {
    			e.preventDefault();
-  			$('html, body').animate({ scrollTop: $(this.hash).offset().top }, 500);
+  			$('html, body').animate({ scrollTop: $(this.hash).offset().top -50}, 500);
   		});
 	</script>
 </body>

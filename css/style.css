@@ -28,7 +28,6 @@ body {
     margin-right: auto;
     float: center;
     max-width: 900px;
-    margin-top: 32px;
     font-size: 30px;
     font-family: 'alexandriaflfbold';
     line-height: 36px;
@@ -161,12 +160,11 @@ a:hover {
 
 
 /***TAB CONTENT***/
-.writing {
+#home .writing {
     padding-top: 50px;
 }
-.writing p {
+#home .writing p {
     margin-top: 100px;
-    margin-bottom: 200px;
 }
 #tabcontent {
     padding: 0px 0px 0px 0px;
@@ -175,7 +173,6 @@ a:hover {
     font-size: 50px
 }
 .arrow {
-    padding-top: 80px;
     text-align: center;
 }
 .icon-double-angle-down {
@@ -204,6 +201,11 @@ a:hover {
 /***HOME CONTENT***/
 .home-content {
     padding-top: 100px;
+    margin-bottom: 350px;
+}
+#home p {
+    margin-top: 80px;
+    margin-bottom: 200px;
 }
 #home img {
     margin-top: -30px;
@@ -214,18 +216,27 @@ a:hover {
     width: 55%;
     margin-right: -40px;
 }
-
+#home .arrow {
+    margin-top: 120px;
+}
+.red-box, .red-boxTwo, .red-boxThree, .red-boxFour, .red-boxFive {
+    background-color: #fb7070;
+}
+.blue-box {
+    background-color: #33cccc;
+}
 /***HOME SLIDE-ONE***/
 .container #home-slide1 {
     position: relative;
-    width: 1012px;
+    top: 100px;
 }
 #home-slide1 .red-box {
-    background-color: #fb7070;
     height: 105px;
     width: 446px;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    top: 70px;
+    left: 2px;
 }
 #home-slide1 .red-box p {
     color: white;
@@ -237,16 +248,15 @@ a:hover {
 }
 #home-slide1 .icepot img {
     position: absolute;
-    top: 197px;
-    left: 16px;
+    top: 119px;
+    left: 3px;
 }
 #home-slide1 .red-boxTwo {
-    background-color: #fb7070;
     height: 103px;
-    width: 345px; 
-    position: relative;
-    left: 625px;
-    bottom: 205px;
+    width: 344px; 
+    position: absolute;
+    right: 40px;
+    top: 71px;
 }
 #home-slide1 .red-boxTwo p {
     color: white;
@@ -260,11 +270,10 @@ a:hover {
     font-size: 40px;
 }
 #home-slide1 .red-boxThree {
-    position: relative;
-    left: 625px;
-    bottom: 213px;
-    background-color: #fb7070;
-    width: 370px;
+    position: absolute;
+    right: 2px;
+    top: 266px;
+    width: 383px;
     height: 103px;
 }
 #home-slide1 .red-boxThree p {
@@ -274,9 +283,8 @@ a:hover {
 }
 #home-slide1 .blue-box {
     position: absolute;
-    top: 465px;
-    left: 13px;
-    background-color: #33cccc;
+    top: 386px;
+    left: 1px;
     width: 154px;
     height: 136px;
 }
@@ -293,11 +301,13 @@ a:hover {
     margin: 0;
     padding: 7px 0px 0px 12px;
 }
+#home-slide1 .note {
+    position: absolute;
+    top: 486px;
+    left: 252px;
+}
 #home-slide1 .note p {
-    position: relative;
-    bottom: 97px;
-    left: 175px;
-    font-size: 38px;
+    font-size: 39px;
     text-align: center;
     margin: 0;
 }
@@ -318,22 +328,224 @@ a:hover {
 }
 #home-slide1 .red-connect0 {
     position: absolute;
-    left: 460px;
-    top: 170px;
+    left: 448px;
+    top: 91px;
     z-index: 2;
 }
 #home-slide1 .red-connect1 {
     position: absolute;
-    right: 289px;
-    top: 253px;
+    right: 300px;
+    top: 174px;
 }
 #home-slide1 .red-arrow {
     position: absolute;
-    right: 259px;
-    top: 448px;
+    right: 270px;
+    top: 369px;
 }
-#home-slide1 .icon-double-angle-down {
+#home-slide1 .arrow {
+    position: absolute;
+    padding-bottom: 0px;
+    left: 485px;
+    top: 604px;
+}
+
+
+/***HOME SLIDE-TWO***/
+.container #home-slide2 {
     position: relative;
-    left: 55px;
-    bottom: 230px;
+    top: 1300px;
+}
+#home-slide2 .red-box {
+    position: absolute;
+    top: 46px;
+    left: 0px;
+    height: 86px;
+    width: 461px;
+}
+#home-slide2 .red-box p {
+    line-height: 32px;
+    font-size: 25px;
+    color: white;
+    padding: 13px 0px 0px 16px;
+}
+#home-slide2 .red-boxTwo {
+    position: absolute;
+    top: 93px;
+    right: -1px;
+    height: 141px;
+    width: 323px;
+}
+#home-slide2 .red-boxTwo .title {
+    line-height: 32px;
+    font-size: 30px;
+    color: white;
+    padding: 17px 0px 0px 20px;
+    margin-bottom: 0px
+}
+#home-slide2 .red-boxTwo .body {
+    color: white;
+    padding: 17px 0px 0px 20px;
+    font-size: 29px;
+    margin-top: -13px;
+    line-height: 33px;
+}
+#home-slide2 .icepot-fire {
+    position: absolute;
+    top: 89px;
+    left: 31px;
+    z-index: -1;
+}
+#home-slide2 .note {
+    position: absolute;
+    width: 160px;
+    left: 63px;
+    top: 343px;
+}
+#home-slide2 .note p {
+    margin: 0;
+    line-height: 19px;
+    font-size: 16px;
+}
+#home-slide2 .note .parenth {
+    display: inline;
+    font-size: 50px;
+    font-family: "alexandriaflfregular";
+    line-height: 0px;
+    bottom: 17px;
+}
+#home-slide2 .note #parenth-one {
+    position: relative;
+    right: 18px;
+}
+#home-slide2 .note #parenth-two {
+    position: relative;
+    left: 132px;
+}
+#home-slide2 .wrong {
+    position: absolute;
+    top: 359px;
+    right: 15px;
+}
+#home-slide2 .wrong p {
+    color: #33cccc;
+    font-size: 80px
+}
+#home-slide2 .text-one {
+    position: absolute;
+    top: 506px;
+    left: 74px;
+}
+#home-slide2 .text-one p {
+    font-size: 40px;
+}
+#home-slide2 .text-one p .italic {
+    font-family: 'alexandriaflf-bolditalic';
+}
+#home-slide2 .text-one p .red {
+    color: #fb7070;
+}
+#home-slide2 .text-one p .blue {
+    color: #33cccc;
+    font-size: 60px;
+}
+#home-slide2 .red-boxThree {
+    position: absolute;
+    top: 603px;
+    left: 59px;
+    height: 79px;
+    width: 416px;
+}
+#home-slide2 .red-boxThree p {
+    font-size: 45px;
+    color: white;
+    padding: 22px 0px 0px 18px;
+}
+#home-slide2 .blue-box {
+    position: absolute;
+    top: 708px;
+    left: 475px;
+    height: 98px;
+    width: 538px;
+}
+#home-slide2 .blue-box p {
+    font-size: 30px;
+    color: white;
+    padding: 14px 0px 0px 22px;
+}
+#home-slide2 .red-boxFour {
+    position: absolute;
+    top: 852px;
+    left: 62px;
+    height: 118px;
+    width: 607px;
+}
+#home-slide2 .red-boxFour p {
+    font-size: 30px;
+    color: white;
+    padding: 11px 0px 0px 19px;
+    line-height: 48px;
+}
+#home-slide2 .red-boxFour p span {
+    font-family: 'alexandriaflf-bolditalic';
+    font-size: 45px;
+}
+#home-slide2 .text-two {
+    position: absolute;
+    top: 1018px;
+    left: 81px;
+}
+#home-slide2 .text-two p {
+    font-size: 50px;
+    max-width: 950px;
+    line-height: 60px;
+}
+#home-slide2 .text-two p .italic {
+    font-family: 'alexandriaflf-bolditalic';
+}
+#home-slide2 .text-two p .bold {
+    color: #33cccc;
+    font-family: 'alexandriaflf-bolditalic';
+}
+#home-slide2 .red-boxFive {
+    position: absolute;
+    top: 1159px;
+    left: 332px;
+    height: 45px;
+    width: 356px;
+}
+#home-slide2 .red-boxFive p {
+    color: white;
+    font-size: 25px;
+    padding: 7px 0px 0px 9px;
+}
+#home-slide2 .red-connect0 {
+    position: absolute;
+    top: 46px;
+    left: 461px;
+}
+#home-slide2 .red-arrow {
+    position: absolute;
+    top: 234px;
+    left: 764px;
+}
+#home-slide2 .black-connect0 {
+    position: absolute;
+    top: 621px;
+    left: 475px;
+}
+#home-slide2 .black-connect1 {
+    position: absolute;
+    top: 806px;
+    left: 189px;
+}
+/***TEMP***/
+#home-slide1 .overlay {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+}
+#home-slide2 .overlay img{
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
 }
