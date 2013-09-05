@@ -545,3 +545,33 @@ a:hover {
     top: 1250px;
     left: 450px;
 }
+
+/***HOME SLIDE-THREE***/
+.container #home-slide3 {
+    position: relative;
+    top: 800px;
+    height: 1000px;
+}
+#home-slide3 .globe{
+    position: absolute;
+    top: 27px;
+    left: 131px;
+}
+#home-slide3 .text-one{
+    position: absolute;
+    left: 233px;
+    top: 470px;
+    width: 600px;
+}
+#home-slide3 .text-one p {
+    line-height: 60px;
+    text-align: center;
+    font-family: 'alexandriaflfregular';
+}
+/***TEMP***/
+#home-slide3 .overlay {
+    position: absolute;
+    opacity: 0.2;
+    left:0;
+    top:0;
+}
