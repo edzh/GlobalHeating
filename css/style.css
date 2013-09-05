@@ -229,6 +229,7 @@ a:hover {
 .container #home-slide1 {
     position: relative;
     top: 100px;
+    height: 780px;
 }
 #home-slide1 .red-box {
     height: 105px;
@@ -353,7 +354,8 @@ a:hover {
 /***HOME SLIDE-TWO***/
 .container #home-slide2 {
     position: relative;
-    top: 1300px;
+    top: 500px;
+    height: 1550px;
 }
 #home-slide2 .red-box {
     position: absolute;
@@ -538,14 +540,8 @@ a:hover {
     top: 806px;
     left: 189px;
 }
-/***TEMP***/
-#home-slide1 .overlay {
-    opacity: 0.2;
+#home-slide2 .arrow {
     position: absolute;
-    left: 0;
-}
-#home-slide2 .overlay img{
-    opacity: 0.2;
-    position: absolute;
-    left: 0;
+    top: 1250px;
+    left: 450px;
 }
