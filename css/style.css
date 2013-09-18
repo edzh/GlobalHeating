@@ -4,7 +4,7 @@ html, html a {
 }
 body {
     /*Default font and color*/
-    font-family: 'alexandriaflf-bold','Open Sans', sans-serif;
+    font-family: 'alexandriaflfbold','Open Sans', sans-serif;
     color: #3e3939;
 
     /*Background Image*/
@@ -296,7 +296,7 @@ a:hover {
     color: #fb7070;
 }
 #home-slide1 .note p .blue {
-    font-family: 'alexandriaflf-bolditalic';
+    font-family: 'alexandriaflfbold_italic';
     font-size: 53px;
     color: #33cccc;
 }
@@ -422,7 +422,7 @@ a:hover {
     font-size: 40px;
 }
 #home-slide2 .text-one p .italic {
-    font-family: 'alexandriaflf-bolditalic';
+    font-family: 'alexandriaflfbold_italic';
 }
 #home-slide2 .text-one p .red {
     color: #fb7070;
@@ -469,7 +469,7 @@ a:hover {
     line-height: 48px;
 }
 #home-slide2 .red-boxFour p span {
-    font-family: 'alexandriaflf-bolditalic';
+    font-family: 'alexandriaflfbold_italic';
     font-size: 45px;
 }
 #home-slide2 .text-two {
@@ -483,11 +483,11 @@ a:hover {
     line-height: 60px;
 }
 #home-slide2 .text-two p .italic {
-    font-family: 'alexandriaflf-bolditalic';
+    font-family: 'alexandriaflfbold_italic';
 }
 #home-slide2 .text-two p .bold {
     color: #33cccc;
-    font-family: 'alexandriaflf-bolditalic';
+    font-family: 'alexandriaflfbold_italic';
 }
 #home-slide2 .red-boxFive {
     position: absolute;
